@@ -1,0 +1,422 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body, html{
+    font-size:18;
+    font-family: 'Lato', sans-serif;
+    background:rgb(245, 245, 245);
+}
+
+h1{
+    font-size:4.8em;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+
+
+header{
+    display:flex;
+    background:black;
+    width:100%;
+    height:350px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.header-info{
+    width:100%;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-grow:1;
+}
+header p {
+    color:rgb(216, 202, 0);;
+    text-align: center;
+    font-size:1.2em;
+    font-style: italic;
+}
+
+
+
+h2{
+    display:block;
+    margin:0;
+    padding:0;
+    width:100%;
+    padding:2% 0;
+    text-transform: capitalize;
+    font-size:2.3em;
+    font-weight:400;
+}
+
+.btn{
+    padding:1% 2%;
+    margin:0;
+    text-decoration: none;
+}
+
+.btn-full{
+    background:rgb(216, 202, 0);
+    color:white;
+}
+/*********************** body ************************/
+.content-body{
+    display:flex;
+    justify-content: space-between;
+}
+
+.side-bar{
+    flex-basis:420px;
+    padding:1% 5% 0 0 ;
+
+}
+
+.content-box{
+    flex-basis:1000px;
+    margin:0 auto;
+    flex-shrink: 2;
+    padding: 0 2em;
+}
+
+.side-bar{
+    display:none;
+    
+}
+
+/*********************** nav ************************/
+nav{
+    background:rgb(216, 202, 0);
+    width:100%;
+    font-size:1.2em;
+}
+
+nav ul{
+    list-style: none;
+    display:flex;
+    justify-content: space-between;
+    margin:0;
+    padding:0;
+}
+
+nav li{
+    flex-grow:1;
+    text-align: center;
+    
+}
+
+nav a:link,
+nav a:visited{
+    text-decoration: none;
+    color:black;
+    font-weight: 700;
+    display:block;
+    width:100%;
+    padding:1.1em 1em;
+    transition:color 0.5s, background 0.5s;
+}
+
+nav a:hover,
+nav a:active{
+    background:black;
+    color:rgb(216, 202, 0);
+}
+/*********************** movie section ************************/
+.featured-movies-section{
+    margin:0;
+    padding:0 2%;
+    width:100%;
+}
+
+.featured-movies-section h2{
+    font-size:2em;
+}
+
+.featured-movies{
+    display:flex;
+    flex-direction:column;
+    background:white;
+    margin:2% 0 3% 0;
+}
+
+.movie-image img{
+    display:block;
+    width:100%;
+}
+
+.movie-des{
+    
+}
+.movie-title{
+    margin:0;
+    padding:2% 2%;
+    background:rgb(216, 202, 0);
+    text-align: center;
+}
+
+.movie-des p{
+    padding: 3% 2%;
+}
+
+/*********************** new releases ************************/
+.new-release h2{
+    font-size:2.3em;
+    font-weight:400;
+    
+}
+
+.new-movie{
+    margin-bottom: 1em;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-start;
+}
+.new-movie-img-box img{
+    width:100%;
+    display:block;
+}
+
+.new-movie-info{
+    background:black;
+    padding:2em;
+    color:white;
+}
+
+.new-movie-info ul{
+    list-style: none;
+    display:flex;
+    justify-content: flex-start;
+    padding:1% 0 2% 0 ;
+}
+
+.new-movie-info li{
+    flex-basis: 100px;
+    font-weight:700;
+}
+
+.new-movie-info p{
+    padding-bottom: 4%;
+}
+
+
+/*********************** download ************************/
+.download-img img{
+    display:block;
+    width:100%;
+}
+
+.download-info{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.download-btn{
+    background:black;
+    display:flex;
+    flex-direction: column;
+    padding:2%;
+    align-items: center;
+    justify-content: center;
+}
+
+.download-btn a{
+    text-decoration: none;
+    color:white;
+    text-align: center;
+}
+
+.download-btn i{
+    font-size:2em;
+    margin-bottom: 0.2em;
+}
+
+.casts-box{
+    background:white;
+    padding:2%;
+}
+
+.point{
+    background:rgb(216, 202, 0);
+    padding:2%;
+    text-align: center;
+    
+}
+
+.p{
+    font-size:2.3em;
+    font-weight: 700;
+}
+.casts, .genre{
+    display:flex;
+    flex-wrap:wrap;
+    margin-bottom:0.3em;
+}
+
+.casts p, .genre p{
+    flex-basis: 15%;
+}
+
+.casts div{
+    flex-basis: 65px;
+}
+.casts div img{
+    display:block;
+    width:100%;
+    border-radius: 50%;
+}
+
+
+/*********************** gallery ************************/
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    margin-right:-8px;
+}
+
+.gallery-box{
+    flex-grow:1;
+    height:200px;
+    margin:0 0.4em 0.4em 0;
+}
+
+.gallery-box img{
+    /* display:block; */
+    object-fit: cover;
+    width:100%;
+    height:100%;
+    
+}
+
+.gallery-box:nth-child(4n+1){
+    width:250px;
+    /* border:2px solid blue; */
+}
+.gallery-box:nth-child(4n+2){
+    width:325px;
+    /* border:2px solid red; */
+}
+.gallery-box:nth-child(4n+3){
+    width:180px;
+    /* border:2px solid green; */
+}
+.gallery-box:nth-child(4n+4){
+    width:380px;
+    /* border:2px solid yellow; */
+}
+
+
+/*********************** side bar ************************/
+.widget-box{
+    background:white;
+    padding:2em 2em 0 2em ;
+    margin:3em 0 0 0;
+}
+
+.widget-box ul{
+    /* list-style: none; */
+    padding:1em 0 1em 2em;
+}
+
+.widget-box li{
+    margin-bottom: 5px;
+}
+
+.widget-box a{
+    text-decoration: none;
+    color:black;
+}
+
+/*********************** footer ************************/
+footer{
+    margin-top:3em;
+    color:white;
+    text-align: center;
+    font-weight: 300;
+    padding:2%;
+    background:black;
+}
+
+
+@media screen and (min-width:900px){
+    .side-bar{
+        display:flex;
+        flex-direction: column;
+        flex-shrink: 2;
+        padding-left:2em;
+    }
+    .featured-movies-section{
+        display:flex;
+        flex-wrap:wrap;
+        padding:0;
+        justify-content: space-between;
+    }
+
+    .one-half{
+        flex-basis:49%;
+        
+    }
+    
+    .one-third{
+        flex-basis:31%;
+    }
+
+    .full{
+        flex-basis:100%;
+    }
+
+
+    .new-movie{
+        flex-direction: row;
+    }
+
+    .new-movie-img-box{
+        flex-basis:40%;
+    }
+
+    .new-movie-info{
+        display:flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .new-movie-info a{
+    align-self: flex-start
+    }
+
+    .reverse .new-movie-img-box{
+        order:1;
+    }
+
+    .download-info{
+        flex-direction: row;
+    }
+
+    .download-btn{
+        flex-basis:20%;
+        flex-grow:1;
+        flex-shrink: 2;
+    }
+
+    .casts-box{
+        flex-basis:60%;
+        flex-grow:2;
+        flex-shrink: 1;
+    }
+    
+    .point{
+        flex-basis:20%;
+        flex-grow:1;
+        flex-shrink: 2;   
+    }
+}
